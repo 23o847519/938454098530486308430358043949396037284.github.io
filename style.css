@@ -1,0 +1,22 @@
+ body {background-color:#black;} 
+
+  p{color:D2738A;}
+  a{color:#C1B492;}
+  h1{color:#D2738A;}
+
+
+* {
+
+text-align: center;
+
+}
+
+ }
+      #bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+        background-color: blue;
+        padding: 15px 0;
+      }
