@@ -28,11 +28,11 @@ footer {
 
 
 #rightpic {
-background-position: right;
-background: url('Resources/unknown-6.png') no-repeat;
-height : 1000px;
+background-position: top right;
+background: url('Resources/battleofcum900.png') no-repeat;
+height : 600px;
 padding : 0;
-width: 500px;
+width: 315px;
 float: right;
-margin: 0px;
+margin: 10px;
 }
