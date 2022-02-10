@@ -25,3 +25,11 @@ footer {
   font-size: x-small;
 
 }
+
+#rightpic {
+   background-position: top right;
+   background: url('Resources/unkown-6.png') no-repeat;
+   height : 133px;
+   padding : 0;
+   width: 138px;
+}
