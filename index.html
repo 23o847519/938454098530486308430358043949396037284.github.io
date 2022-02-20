@@ -27,8 +27,36 @@
 
 	</dl>
 			
-        <img src="Resources/bfaclogo.webm" width="330">
+        <img src="resources/bfaclogo.gif" width="330">
 
-			
+<body>
+	     <video id="autoplay" autoplay="" loop="" playsinline="" src="Music/anti.webm"></video>
+<script>
+/* this js only exists because browsers dont allow fun autoplay vids by default anymore */
+document.addEventListener("DOMContentLoaded", function() {
+  let bg = document.getElementById("autoplay");
+  let p = bg.play();
+  let ap = true; if(p !== undefined){p.then(function() {}).catch(function(error){ap = false;}).then(function() {
+  if (ap) {
+    /* was going to do something clever here to avoid the frozen vid on no autoplay and no js,
+       where someone without js and autoplay would also see the gif,
+       but that would break the case where someone has autoplay enabled but not js */
+  } else {
+    let newbg = document.createElement('img');
+    newbg.id = "autoplay";
+    newbg.src = "https://xn--z7x.xn--6frz82g/_/browserissues.gif";
+    document.body.replaceChild(newbg, bg);
+    document.body.addEventListener("click", function f() {
+      document.body.replaceChild(bg, newbg);
+      bg.volume = 0;
+      bg.play();
+      document.body.removeEventListener("click", f);
+      let v = setInterval(function(){bg.volume+=0.015; if(bg.volume > .9) {clearInterval(v);}},420);
+    });
+  }
+});}});
+</script>
+</body>
+
 </html>
 </header>
